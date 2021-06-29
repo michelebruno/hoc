@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="turbo" unicode="&#xe801;" d="M979 850h-46v-21h46v-46h21v67h-21z m0-979h-46v-21h67v67h-21v-46z m-912-21v21h-46v46h-21v-67h67z m-46 979h46v21h-67v-67h21v46z m477-524l-25-455h-337v25h163l44 437 155-7z m33 435v41h17v-11h17v9h18v30h-12v11h22c0 17 9 30 20 30s20-13 20-30h21v-11h-11v-30h18v-9h16v11h17v-41h11s-2-31-19-45v-820h178v-25h-325v845c-16 14-19 45-19 45z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
