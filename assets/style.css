@@ -1,10 +1,11 @@
 @import url("https://use.typekit.net/ynr8vis.css");
 
 
-body{
-    --e-global-typography-text-font-family :roc-grotesk, "IBM Plex Sans"!important;;
+body {
+    --e-global-typography-text-font-family: roc-grotesk, "IBM Plex Sans" !important;;
     font-family: roc-grotesk, "IBM Plex Sans", serif !important;
 }
+
 ion-icon {
     vertical-align: middle;
 }
@@ -52,26 +53,35 @@ h1 {
     padding: 0 0 .6em 0 !important;
 }
 
-.campidiscipinari > .elementor-widget-wrap {
-    margin: .8em;
-    padding-top: 1.5em !important;
+.campidiscipinari > .elementor-widget-wrap,
+.campidiscipinari {
+     padding-top: 1.5em !important;
     padding-bottom: 1.5em !important;
     border-radius: 15px;
     background-color: var(--e-global-color-primary);
 }
 
-.campidiscipinari .elementor-widget-image {
+.campidiscipinari a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.campidiscipinari .elementor-widget-image,
+.campidiscipinari img {
     width: 80%;
+    display: block;
     margin: auto;
 }
 
-.campidiscipinari .elementor-widget-text-editor {
+.campidiscipinari .elementor-widget-text-editor,
+.campidiscipinari .label {
     text-align: center;
     color: white;
     font-size: 1.3em;
     line-height: 1;
-    padding-top: .5em;
-    font-weight: 600 !important;
+    padding-top: 1em;
+    font-weight: 600;
 }
 
 .campidiscipinari .elementor-widget-text-editor .elementor-widget-container p {

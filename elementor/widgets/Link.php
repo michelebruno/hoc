@@ -52,9 +52,9 @@ class Link extends Base
         $this->add_control(
             'website_link',
             [
-                'label' => __( 'Link'  ),
+                'label' => __('Link'),
                 'type' => \Elementor\Controls_Manager::URL,
-                'placeholder' => __( 'https://your-link.com', 'plugin-domain' ),
+                'placeholder' => __('https://your-link.com', 'plugin-domain'),
                 'show_external' => false,
                 'default' => [
                     'url' => '',
@@ -73,13 +73,13 @@ class Link extends Base
         $image = $this->get_settings_for_display('image');
         ?>
         <div class="campidiscipinari">
-            <a href=""></a>
-            <div>
+            <a href=""  >
                 <?php echo wp_get_attachment_image($image['id']); ?>
-            </div>
-            <div class="ciao"><?php echo $testo; ?>
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
+
+                <div class="label"><?php echo $testo; ?>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+            </a>
         </div>
 
         <?php

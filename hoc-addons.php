@@ -2,11 +2,10 @@
 /**
  *
  *
- * Plugin Name: TurBo Addons
+ * Plugin Name: HOC Addons
  * Version:     0.1.0
- * Description: Elementi aggiuntivi per turismo.bologna.it
+ * Description: Elementi aggiuntivi per hoc.polimi.it
  * Author:      Michele Bruno
- *
  *
  */
 
