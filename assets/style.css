@@ -1,0 +1,191 @@
+@import url("https://use.typekit.net/ynr8vis.css");
+
+
+body{
+    --e-global-typography-text-font-family :roc-grotesk, "IBM Plex Sans"!important;;
+    font-family: roc-grotesk, "IBM Plex Sans", serif !important;
+}
+ion-icon {
+    vertical-align: middle;
+}
+
+.site-navigation a {
+    text-decoration: none !important;
+}
+
+@media (min-width: 1200px) {
+    .site-header, body:not([class*=elementor-page-]) .site-main {
+        max-width: 1140px !important;
+    }
+}
+
+.text-primary {
+    color: var(--e-global-color-primary);
+}
+
+.termina, .termina .elementor-heading-title {
+    font-family: termina !important;
+}
+
+.impact-item {
+    border-bottom: 1px solid var(--e-global-color-secondary);
+    margin-bottom: 5px !important;
+}
+
+.impact-heading {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--e-global-color-primary);
+}
+
+.impact-label {
+    margin-bottom: 5px !important;
+    font-size: 1.4em;
+}
+
+.mb-0 p {
+    margin-bottom: 5px !important;
+}
+
+h1 {
+    padding: 0 0 .6em 0 !important;
+}
+
+.campidiscipinari > .elementor-widget-wrap {
+    margin: .8em;
+    padding-top: 1.5em !important;
+    padding-bottom: 1.5em !important;
+    border-radius: 15px;
+    background-color: var(--e-global-color-primary);
+}
+
+.campidiscipinari .elementor-widget-image {
+    width: 80%;
+    margin: auto;
+}
+
+.campidiscipinari .elementor-widget-text-editor {
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    line-height: 1;
+    padding-top: .5em;
+    font-weight: 600 !important;
+}
+
+.campidiscipinari .elementor-widget-text-editor .elementor-widget-container p {
+    margin: 0 !important;
+}
+
+.campidiscipinari .elementor-widget-text-editor .elementor-widget-container a {
+    color: white !important;
+    text-decoration: none;
+}
+
+
+.team-member .elementor-widget-text-editor {
+    text-align: center;
+}
+
+.team-member .elementor-widget-text-editor h4 {
+    font-size: 1.2em;
+    margin: 0.3em 0 !important;
+}
+
+.team-member .elementor-widget-text-editor .label {
+    font-size: 14px;
+}
+
+.lead {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.lead p, .mb-0 p {
+    margin-bottom: 0 !important;
+}
+
+.marquee {
+    color: transparent;
+    font-size: 5em;
+    white-space: nowrap;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--e-global-color-primary);
+    animation: marquee 25s linear alternate infinite;
+}
+
+@keyframes marquee {
+    to {
+        margin-left: -80%;
+    }
+    from {
+        margin-left: 0;
+    }
+}
+
+.custom-logo {
+    max-width: 40%
+}
+
+.section-padding,
+.section-padding-top {
+    padding-top: 2em;
+}
+
+.section-padding,
+.section-padding-bottom {
+    padding-bottom: 2em;
+}
+
+.project-name {
+    font-family: termina;
+    font-weight: 700;
+    color: var(--e-global-color-primary);
+    margin-bottom: 0;
+}
+
+.project-label {
+    font-size: .9em;
+}
+
+.project-descr {
+    margin-bottom: 0 !important;
+}
+
+.clip1 {
+    border-radius: 3em 3em 0 3em;
+    overflow: hidden;
+}
+
+.clip2 {
+    border-radius: 3em 3em 3em 0;
+    overflow: hidden;
+}
+
+.clip3 {
+    border-radius: 3em 0 3em 3em;
+    overflow: hidden;
+}
+
+.clip4 {
+    border-radius: 0 3em 3em 3em;
+    overflow: hidden;
+}
+
+.clip5 {
+    border-radius: 0 3em 0 3em;
+    overflow: hidden;
+}
+
+.clip6 {
+    border-radius: 3em 0 3em 0;
+    overflow: hidden;
+}
+
+:is(.clip1, .clip2, .clip3, .clip4, .clip5, .clip6) img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

@@ -224,10 +224,10 @@ final class Extension
     {
         // Include Widget files
 
-//        require_once(__DIR__ . '/widgets/base.php');
+        require_once(__DIR__ . '/widgets/base.php');
 
-//        require_once(__DIR__ . '/widgets/slider.php');
-//        Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Slider());
+        require_once(__DIR__ . '/widgets/Link.php');
+        Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Link());
 //
 //        require_once(__DIR__ . '/widgets/scroll-icon.php');
 //        Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Scroll_Icon());

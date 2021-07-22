@@ -5,7 +5,6 @@ namespace HOC\Elementor\Widgets;
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
-
 }
 
 

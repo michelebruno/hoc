@@ -25,6 +25,8 @@ function turbo_addons_scripts()
     wp_enqueue_style('slick', plugin_dir_url(__DIR__) . 'assets/lib/slick/slick.css');
     wp_enqueue_style('slick-theme', plugin_dir_url(__DIR__) . 'assets/lib/slick/slick-theme.css');
 
+    wp_enqueue_style('hoc', plugin_dir_url(__DIR__) . 'assets/style.css');
+
 }
 
 
@@ -33,17 +35,8 @@ add_action('wp_enqueue_scripts', 'turbo_addons_scripts');
 function turbo_addons_inline_footer()
 {
     echo <<<EOT
-    <script>
-        jQuery(document) . ready(function ($) {
-            $('.turbo-slider') . slick() . show();
-            $(window) . resize(function () {
-                $('.turbo-slider') . not('.slick-initialized') . slick('resize');
-            });
-            $(window) . on('orientationchange', function () {
-                $('.turbo-slider') . not('.slick-initialized') . slick('resize');
-            });
-        });
-    </script >
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 EOT;
 }
 

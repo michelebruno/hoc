@@ -31,4 +31,4 @@ require_once plugin_dir_path(__FILE__) . 'elementor/elementor.php';
 /**
  * Enqueue di script e stili.
  */
-//require_once plugin_dir_path(__FILE__) . 'includes/enqueue-assets.php';
+require_once plugin_dir_path(__FILE__) . 'includes/enqueue-assets.php';
