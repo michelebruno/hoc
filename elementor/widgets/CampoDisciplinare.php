@@ -74,7 +74,7 @@ class CampoDisciplinare extends Base
         ?>
         <div class="campidiscipinari">
             <a href=""  >
-                <?php echo wp_get_attachment_image($image['id']); ?>
+                <?php echo wp_get_attachment_image($image['id'], 'large'); ?>
 
                 <div class="label"><?php echo $testo; ?>
                     <ion-icon name="arrow-forward-outline"></ion-icon>
