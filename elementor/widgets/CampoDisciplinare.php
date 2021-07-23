@@ -6,21 +6,21 @@ namespace HOC\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 
-class Link extends Base
+class CampoDisciplinare extends Base
 {
     public function get_name()
     {
-        return 'hoc-link';
+        return 'hoc-campo-disciplinare';
     }
 
     public function get_title()
     {
-        return 'Icone Homepage';
+        return 'Campo disciplinare';
     }
 
     public function get_icon()
     {
-        return 'fa fa-code';
+        return 'fa fa-math';
     }
 
     public function get_categories()
@@ -52,7 +52,7 @@ class Link extends Base
         $this->add_control(
             'website_link',
             [
-                'label' => __('Link'),
+                'label' => __('CampoDisciplinare'),
                 'type' => \Elementor\Controls_Manager::URL,
                 'placeholder' => __('https://your-link.com', 'plugin-domain'),
                 'show_external' => false,

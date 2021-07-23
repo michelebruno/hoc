@@ -30,7 +30,7 @@ function turbo_addons_scripts()
 }
 
 
-add_action('wp_enqueue_scripts', 'turbo_addons_scripts');
+add_action('wp_enqueue_scripts', 'turbo_addons_scripts', 999);
 
 function turbo_addons_inline_footer()
 {

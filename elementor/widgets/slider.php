@@ -19,7 +19,7 @@ class Slider extends Base
 
     public function get_name()
     {
-        return 'turbo_slider';
+        return 'hoc-slider';
     }
 
     public function get_title()

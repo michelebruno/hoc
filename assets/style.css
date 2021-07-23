@@ -2,8 +2,8 @@
 
 
 body {
-    --e-global-typography-text-font-family: roc-grotesk, "IBM Plex Sans" !important;;
-    font-family: roc-grotesk, "IBM Plex Sans", serif !important;
+    --e-global-typography-text-font-family: itc-avant-garde-gothic-pro, sans-serif !important;
+    font-family: itc-avant-garde-gothic-pro, sans-serif !important;
 }
 
 ion-icon {
@@ -53,28 +53,35 @@ h1 {
     padding: 0 0 .6em 0 !important;
 }
 
-.campidiscipinari > .elementor-widget-wrap,
 .campidiscipinari {
-     padding-top: 1.5em !important;
+    padding-top: 1.5em !important;
     padding-bottom: 1.5em !important;
     border-radius: 15px;
     background-color: var(--e-global-color-primary);
+    transition: background-color 1s ease;
+}
+
+.campidiscipinari:hover {
+    background-color: #8a1160;
 }
 
 .campidiscipinari a {
     display: block;
     height: 100%;
     width: 100%;
+    text-decoration: none;
 }
 
-.campidiscipinari .elementor-widget-image,
+.campidiscipinari:hover a {
+    text-decoration: none;
+}
+
 .campidiscipinari img {
     width: 80%;
     display: block;
     margin: auto;
 }
 
-.campidiscipinari .elementor-widget-text-editor,
 .campidiscipinari .label {
     text-align: center;
     color: white;
@@ -82,15 +89,8 @@ h1 {
     line-height: 1;
     padding-top: 1em;
     font-weight: 600;
-}
-
-.campidiscipinari .elementor-widget-text-editor .elementor-widget-container p {
-    margin: 0 !important;
-}
-
-.campidiscipinari .elementor-widget-text-editor .elementor-widget-container a {
-    color: white !important;
     text-decoration: none;
+    margin: 0 !important;
 }
 
 
@@ -198,4 +198,22 @@ h1 {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+
+.footer {
+    font-size: .85em;
+    color: #715869;
+}
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer ul {
+    list-style: none;
+
+}
+.footer ul a {
+    font-weight: 300;
 }
