@@ -72,11 +72,19 @@ class CampoDisciplinare extends Base
         $testo = $this->get_settings_for_display('testo');
         $image = $this->get_settings_for_display('image');
         ?>
-        <div class="campidiscipinari">
-            <a href=""  >
-                <?php echo wp_get_attachment_image($image['id'], 'large'); ?>
+        <div class="campidiscipinari
+        transition group
+        shadow
+        m-auto
+        lg:w-4/5
+        bg-primary hover:bg-primary-dark
+        p-4 pt-6 rounded-lg">
+            <a href="" class="block w-full h-full no-underline group-hover:no-underline">
+                <?php echo wp_get_attachment_image($image['id'], 'large', false, [
+                        'class' => "w-4/5 block m-auto"
+                ]); ?>
 
-                <div class="label"><?php echo $testo; ?>
+                <div class="text-center text-white pt-6 font-bold m-0 leading-none"><?php echo $testo; ?>
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                 </div>
             </a>

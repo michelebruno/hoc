@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/ynr8vis.css");
 
+/* purgecss start ignore */
 
 body {
     --e-global-typography-text-font-family: itc-avant-garde-gothic-pro, sans-serif !important;
@@ -68,31 +69,20 @@ h1 {
     /*.campidiscipinari {*/
     /*    width: 80%;*/
     /*}*/
-
     .home .campidiscipinari {
         width: 60%;
     }
 }
+
 .campidiscipinari:hover {
     /*background-color: #9c136c;*/
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
-.campidiscipinari a {
-    /*display: block;*/
-    /*height: 100%;*/
-    /*width: 100%;*/
-    text-decoration: none;
-}
-
-.campidiscipinari:hover a {
-    text-decoration: none;
-}
-
 .campidiscipinari img {
-    width: 80%;
-    display: block;
-    margin: auto;
+    /*width: 80%;*/
+    /*display: block;*/
+    /*margin: auto;*/
 }
 
 .campidiscipinari .label {
@@ -131,9 +121,10 @@ h1 {
 }
 
 .marquee {
-    color: transparent;
+    @apply text-transparent whitespace-nowrap;
+    /*color: transparent;*/
     font-size: 5em;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--e-global-color-primary);
     animation: marquee 25s linear alternate infinite;
@@ -163,14 +154,11 @@ h1 {
 }
 
 .project-name {
-    font-family: termina;
-    font-weight: 700;
-    color: var(--e-global-color-primary);
-    margin-bottom: 0;
+    @apply font-termina text-primary m-0 font-bold;
 }
 
 .project-label {
-    font-size: .9em;
+    @apply text-sm;
 }
 
 .project-descr {
@@ -237,10 +225,11 @@ h1 {
 .footer ul a {
     font-weight: 300;
 }
+
 .footer :nth-child(4) img {
     /*width: 100%;*/
 }
-
+/* purgecss end ignore */
 
 
 @tailwind components;

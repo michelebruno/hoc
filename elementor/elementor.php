@@ -235,8 +235,8 @@ final class Extension
 //        require_once(__DIR__ . '/widgets/informazioni-attrazione.php');
 //        Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Informazioni_Attrazione());
 //
-        require_once(__DIR__ . '/widgets/slider.php');
-        Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Slider());
+//        require_once(__DIR__ . '/widgets/slider.php');
+//        Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Slider());
 
 //        require_once(__DIR__ . '/widgets/categorie.php');
 //        Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Categorie());

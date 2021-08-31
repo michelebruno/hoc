@@ -3,11 +3,12 @@
 namespace HOC\Elementor;
 
 use Elementor\{Controls_Manager,
-    Group_Control_Image_Size,
+     Group_Control_Image_Size,
     Group_Control_Text_Shadow,
     Group_Control_Typography,
-    Repeater,
-    Scheme_Typography};
+    Repeater};
+
+use Elementor\Core\Schemes\Typography ;
 
 if (!defined('ABSPATH')) {
 
@@ -93,7 +94,7 @@ class Controls
             [
                 'name' => "{$target}_tipographys",
                 'label' => __($target_display),
-                'scheme' => Scheme_Typography::TYPOGRAPHY_3,
+                'scheme' => Typography::TYPOGRAPHY_3,
                 'selector' => $selector
             ]
 
@@ -455,9 +456,6 @@ class Controls
 
         $bcc_opt = [];
 
-        foreach ($bologna as $cat) {
-            $bcc_opt[$cat->term_id] = $cat->parent ? get_category($cat->parent)->name . ' > ' . $cat->name : $cat->name;
-        }
 
         /*
          * Tags
