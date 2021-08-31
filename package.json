@@ -1,0 +1,19 @@
+{
+  "name": "hoc-addons",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/michelebruno/hoc-addons.git",
+  "author": "michelebruno <43304601+michelebruno@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^18.0.0",
+    "autoprefixer": "^10.3.3",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.9"
+  }
+}
