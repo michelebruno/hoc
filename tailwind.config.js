@@ -1,4 +1,5 @@
 module.exports = {
+    important: true,
     // mode: 'jit',
     purge: {
         content: [
@@ -27,6 +28,9 @@ module.exports = {
                     dark: '#9c136c',
                     DEFAULT: 'var(--e-global-color-primary, #AD1578)'
                 }
+            },
+            height: {
+                144 : '36rem'
             }
         },
     },

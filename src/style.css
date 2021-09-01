@@ -1,6 +1,9 @@
 @import url("https://use.typekit.net/ynr8vis.css");
 
 /* purgecss start ignore */
+body {
+    --swiper-theme-color: var(--e-global-color-primary,#AD1578)
+}
 
 body {
     --e-global-typography-text-font-family: itc-avant-garde-gothic-pro, sans-serif !important;
@@ -22,9 +25,6 @@ ion-icon {
     }
 }
 
-.text-primary {
-    @apply text-primary;
-}
 
 .termina,
 .elementor-heading-title, .termina .elementor-heading-title {
@@ -232,6 +232,9 @@ h1 {
 
 /* purgecss end ignore */
 
+.hoc-projects-swiper .swiper-slide {
+    box-shadow: 0 10px 8px rgba(173, 21, 120, 0.25);
+}
 
 @tailwind components;
 @tailwind utilities;

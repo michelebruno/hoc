@@ -21,16 +21,21 @@ function turbo_addons_scripts()
 //    } else {
 //        wp_enqueue_script('slick', plugin_dir_url(__DIR__) . 'assets/lib/slick/slick.min.js', array('jquery'));
 //    }
+//
+//    wp_enqueue_script('swiper', "https://unpkg.com/swiper@7/swiper-bundle.min.js", [],null, true);
+    wp_enqueue_style('swiper',"https://unpkg.com/swiper@7/swiper-bundle.min.css");
 
-//    wp_enqueue_style('slick', plugin_dir_url(__DIR__) . 'assets/lib/slick/slick.css');
-//    wp_enqueue_style('slick-theme', plugin_dir_url(__DIR__) . 'assets/lib/slick/slick-theme.css');
 
+    if (!wp_script_is('swiper', 'registered')) {
+         wp_register_script('swiper', "https://unpkg.com/swiper@7/swiper-bundle.min.js", [], null, true);
+    }
 
     $frontendAssets = include plugin_dir_path(__DIR__) . "build/index.asset.php";
 
 //    wp_enqueue_script('wp-api');
 
-    wp_enqueue_style("hoc", plugin_dir_url(__DIR__) . "build/style-index.css", [], $frontendAssets["version"]);
+    wp_enqueue_style("hoc", plugin_dir_url(__DIR__) . "build/style-index.css", ['elementor-frontend', 'swiper'], $frontendAssets["version"]);
+
 
     wp_enqueue_script(
         "hoc",
@@ -39,7 +44,7 @@ function turbo_addons_scripts()
         $frontendAssets["version"],
         true);
 
- }
+}
 
 
 add_action('wp_enqueue_scripts', 'turbo_addons_scripts', 999);
