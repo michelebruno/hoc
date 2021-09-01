@@ -2,13 +2,13 @@ module.exports = {
     // mode: 'jit',
     purge: {
         content: [
-            './src/**/*.php',
-            './template-parts/**/*.php',
+            // './src/**/*.php',
+            // './template-parts/**/*.php',
             './elementor/*.php',
             './elementor/**/*.php',
             './*.php',
-            './inc/**/*.php',
-            './inc/*.php',
+            './includes/**/*.php',
+            './includes/*.php',
             './src/**/*.js',
         ],
         safelist: [

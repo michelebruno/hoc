@@ -74,11 +74,11 @@ class CampoDisciplinare extends Base
         ?>
         <div class="campidiscipinari
         transition group
-        shadow
+        shadow-lg hover:shadow-sm
         m-auto
         lg:w-4/5
         bg-primary hover:bg-primary-dark
-        p-4 pt-6 rounded-lg">
+        px-4 py-6 rounded-lg">
             <a href="" class="block w-full h-full no-underline group-hover:no-underline">
                 <?php echo wp_get_attachment_image($image['id'], 'large', false, [
                         'class' => "w-4/5 block m-auto"
