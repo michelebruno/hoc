@@ -2,11 +2,11 @@ import "./style.css"
 /* purgecss start ignore */
 // import "swiper/css"
 /* purgecss end ignore */
-import Swiper, {Autoplay, Pagination} from 'swiper'
+import Swiper, {Autoplay, Navigation, Pagination} from 'swiper'
 
 function onDocReady() {
     const sw = new Swiper('.swiper.hoc-projects-swiper', {
-        modules: [Autoplay, Pagination],
+        modules: [Autoplay,Navigation, Pagination],
         speed: 400,
         spaceBetween: 50,
         slidesPerView: 1,
@@ -16,6 +16,7 @@ function onDocReady() {
         pagination: {
             el: ".swiper-pagination",
         },
+        navigation: true,
         breakpoints: {
 
             // when window width is >= 480px
@@ -30,6 +31,17 @@ function onDocReady() {
             },
         }
     })
+
+    const news = new Swiper('.swiper.hoc-news-swiper', {
+        modules: [Autoplay, Pagination],
+        slidesPerView: 1,
+        // loop: true,
+        // freeMode: true,
+        autoplay: true,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+     })
 
 }
 

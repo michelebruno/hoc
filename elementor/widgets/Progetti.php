@@ -135,7 +135,7 @@ class Progetti extends Base
                 }
                 ?>
             </div>
-            <div class="swiper-pagination mx-auto w-full"></div>
+            <div class="swiper-pagination"></div>
         </div>
         <?php
     }

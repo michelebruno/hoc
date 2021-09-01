@@ -56,9 +56,8 @@
             if (have_posts()) {
                 the_post();
                 ?>
-                <div class="swiper hoc-news-swiper">
-
-                <div class="swiper-wrapper w-4/5 m-auto"><?php
+                <div class="swiper hoc-news-swiper px-16">
+                <div class="swiper-wrapper"><?php
                         while (have_posts()) {
                             the_post();
                             ?>
@@ -71,7 +70,7 @@
                                 shadow-lg">
                                     <div>
                                         <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'large', false, [
-                                                "class" => "h-full w-full object-cover"
+                                            "class" => "h-full w-full object-cover"
                                         ]); ?>
                                     </div>
                                     <div class="py-6 pr-4">
@@ -91,6 +90,11 @@
 
                     ?>
                 </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
                 </div><?php
             }
 

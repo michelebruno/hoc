@@ -2,7 +2,8 @@
 
 /* purgecss start ignore */
 body {
-    --swiper-theme-color: var(--e-global-color-primary,#AD1578)
+    --swiper-theme-color: var(--e-global-color-primary,#AD1578);
+    --swiper-navigation-color: var(--e-global-color-primary,#AD1578);
 }
 
 body {
@@ -234,6 +235,10 @@ h1 {
 
 .hoc-projects-swiper .swiper-slide {
     box-shadow: 0 10px 8px rgba(173, 21, 120, 0.25);
+}
+
+.hoc-news-swiper :where(.swiper-button-next, .swiper-button-prev) {
+    background-image: none !important;
 }
 
 @tailwind components;
