@@ -238,6 +238,9 @@ final class Extension
         require_once(__DIR__ . '/widgets/Progetti.php');
         Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Progetti());
 
+        require_once(__DIR__ . '/widgets/News.php');
+        Plugin::instance()->widgets_manager->register_widget_type(new Widgets\News());
+
 //        require_once(__DIR__ . '/widgets/categorie.php');
 //        Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Categorie());
 

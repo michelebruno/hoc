@@ -3,7 +3,6 @@
 
 namespace HOC\Elementor\Widgets;
 
-
 use Elementor\Controls_Manager;
 
 class Progetti extends Base
