@@ -10,6 +10,7 @@ module.exports = {
             './single.php',
             './index.php',
             './single.php',
+            './page.php',
             './header.php',
             './footer.php',
             './functions.php',

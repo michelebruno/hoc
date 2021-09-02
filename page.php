@@ -1,14 +1,12 @@
 <?php
     if (!defined('ABSPATH')) exit();
 
-    get_header(); ?>
-
-    <div class="container mx-auto my-4"><?php
+    get_header();
 
     if (have_posts()) :
     while (have_posts()) : the_post();
     ?>
-    <h1 class="text-primary font-bold"><?php the_title() ?></h1>
+    <h1 class="text-primary text-2xl"><?php the_title() ?></h1>
     <div class="font-light">
         <?php the_content(); ?>
     </div>
@@ -18,7 +16,4 @@
     else :
     _e('Sorry, no posts matched your criteria.', 'textdomain');
     endif;
-?>
-    </div>
-        <?php
     get_footer();

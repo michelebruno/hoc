@@ -3,18 +3,34 @@
 @import url("https://use.typekit.net/ynr8vis.css");
 
 /* purgecss start ignore */
+
 body {
     --swiper-theme-color: theme('colors.primary.DEFAULT');
     --swiper-navigation-color: theme('colors.primary.DEFAULT');
-
+    --e-global-typography-primary-font-family: theme('fontFamily.termina') !important;
     --e-global-typography-text-font-family: itc-avant-garde-gothic-pro, sans-serif !important;
     font-family: itc-avant-garde-gothic-pro, sans-serif !important;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
 }
 
 ion-icon {
     vertical-align: middle;
 }
 
+h1 {
+    @apply text-5xl;
+}
+
+h2 {
+    @apply text-4xl mb-6;
+}
+h2 {
+    @apply text-3xl mb-5;
+}
 
 .site-navigation a {
     text-decoration: none !important;
@@ -124,7 +140,6 @@ h1 {
 .marquee {
     @apply whitespace-nowrap;
     color: transparent !important;
-    font-size: 5em;
     /*white-space: nowrap;*/
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--e-global-color-primary);
@@ -133,6 +148,8 @@ h1 {
 
 .marquee h2 {
     color: transparent !important;
+    font-size: 5em;
+
 }
 
 @keyframes marquee {
@@ -159,11 +176,11 @@ h1 {
 }
 
 .project-name {
-    @apply font-termina text-primary m-0 font-bold;
+    @apply font-termina text-primary mb-0 font-bold text-3xl;
 }
 
 .project-label {
-    @apply text-sm;
+    @apply text-sm mt-0;
 }
 
 .project-descr {
@@ -236,14 +253,15 @@ h1 {
 }
 
 /* purgecss end ignore */
-
 .hoc-projects-swiper .swiper-slide {
     box-shadow: 0 10px 8px rgba(173, 21, 120, 0.25);
 }
 
+
 .hoc-news-swiper :where(.swiper-button-next, .swiper-button-prev) {
     background-image: none !important;
 }
+
 
 @tailwind components;
 @tailwind utilities;

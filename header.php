@@ -16,14 +16,13 @@ require_once __DIR__ . '/functions.php';
     <title><?php wp_title('|', true, 'right'); ?></title>
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(["font-normal"]); ?>>
+<body <?php body_class(["font-normal !font-DEFAULT"]); ?>>
 <?php wp_body_open(); ?>
-<nav class="shadow-lg w-screen">
+<nav class="shadow-lg">
     <nav class="container mx-auto">
         Questa è la navbar
     </nav>
 </nav>
-<div class="container mx-auto my-4">
 
 
 

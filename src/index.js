@@ -1,4 +1,4 @@
-import "./style.css"
+import "./style.scss"
 /* purgecss start ignore */
 // import "swiper/css"
 /* purgecss end ignore */
