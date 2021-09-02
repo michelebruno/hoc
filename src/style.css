@@ -122,13 +122,17 @@ h1 {
 }
 
 .marquee {
-    @apply text-transparent whitespace-nowrap;
-    /*color: transparent;*/
+    @apply whitespace-nowrap;
+    color: transparent !important;
     font-size: 5em;
     /*white-space: nowrap;*/
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--e-global-color-primary);
     animation: marquee 25s linear alternate infinite;
+}
+
+.marquee h2 {
+    color: transparent !important;
 }
 
 @keyframes marquee {

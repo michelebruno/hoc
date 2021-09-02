@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="3aa7991c-23b9-4299-8b44-3221b934af7e" name="HOC" url="http://www.hoc.polimi.it">
-        <fileTransfer rootFolder="/htdocs-SSL/wp-content/plugins/hoc-addons" accessType="FTPS" host="www.hoc.polimi.it" port="2121">
+        <fileTransfer rootFolder="/htdocs-SSL/wp-content/themes/hoc" accessType="FTPS" host="www.hoc.polimi.it" port="2121">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
