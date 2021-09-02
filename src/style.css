@@ -1,12 +1,12 @@
+@tailwind base;
+
 @import url("https://use.typekit.net/ynr8vis.css");
 
 /* purgecss start ignore */
 body {
-    --swiper-theme-color: var(--e-global-color-primary,#AD1578);
-    --swiper-navigation-color: var(--e-global-color-primary,#AD1578);
-}
+    --swiper-theme-color: theme('colors.primary.DEFAULT');
+    --swiper-navigation-color: theme('colors.primary.DEFAULT');
 
-body {
     --e-global-typography-text-font-family: itc-avant-garde-gothic-pro, sans-serif !important;
     font-family: itc-avant-garde-gothic-pro, sans-serif !important;
 }

@@ -99,8 +99,9 @@ final class Extension
 
     public function __construct()
     {
-        add_action('plugins_loaded', [$this, 'init']);
-    }
+        add_action('after_setup_theme', [$this, 'init']);
+
+     }
 
 
     /**
@@ -223,6 +224,7 @@ final class Extension
     public function init_widgets()
     {
         // Include Widget files
+
 
         require_once(__DIR__ . '/widgets/base.php');
 
