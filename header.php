@@ -17,12 +17,11 @@ require_once __DIR__ . '/functions.php';
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(["font-normal !font-DEFAULT"]); ?>>
-<?php wp_body_open(); ?>
-<nav class="shadow-lg">
-    <nav class="container mx-auto">
-        Questa è la navbar
-    </nav>
-</nav>
+<?php wp_body_open();
+
+get_template_part('template-parts/header')
+?>
+
 
 
 

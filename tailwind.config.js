@@ -4,7 +4,7 @@ module.exports = {
     purge: {
         content: [
             // './src/**/*.php',
-            // './template-parts/**/*.php',
+            './template-parts/**/*.php',
             './elementor/*.php',
             './elementor/**/*.php',
             './single.php',
