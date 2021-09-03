@@ -75,11 +75,11 @@
                                     </div>
                                     <div class="py-6 pr-4">
 
-                                        <h3><?php the_title() ?></h3>
+                                        <h3 class="text-xl text-primary font-termina font-bold"><?php the_title() ?></h3>
                                         <p><?php the_excerpt(); ?></p>
                                         <a href="<?php the_permalink(); ?>" class="
-                                            rounded
-                                            py-4 px-6 bg-primary hover:bg-primary-dark text-white
+                                            rounded-xl inline-block text-sm
+                                            py-2 px-4 border-primary border-2 text-primary
                                         ">Leggi</a>
                                     </div>
                                 </div>

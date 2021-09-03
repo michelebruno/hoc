@@ -142,7 +142,7 @@
                                  as $progetto) {
                             ?>
                             <div class="swiper-slide
-                    rounded overflow-hidden
+                    rounded-xl overflow-hidden
                     flex flex-col
                     my-6 h-auto
                     bg-white">
