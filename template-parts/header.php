@@ -33,7 +33,7 @@
     $menu_items = wp_get_nav_menu_items(wp_get_nav_menu_name('primary'));
 
 ?>
-<header id="site-header" class="site-header hidden" hidde role="banner">
+<header id="site-header" class="site-header hidden" role="banner">
 
     <div class="site-branding">
         <?php
@@ -59,13 +59,13 @@
 </header>
 
 
-<nav class="shadow-lg">
+<nav class="shadow-lg sticky top-0 bg-white z-50">
     <div class="container mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
                 <button type="button"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-white hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                         aria-controls="mobile-menu" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <!--
@@ -95,6 +95,7 @@
             </div>
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-shrink-0 flex items-center">
+                    <a class="block" href="<?php echo get_home_url(); ?>">
                     <?php
 
                         if (has_custom_logo()) {
@@ -110,7 +111,7 @@
 ?><span class="text-lg text-gray-900 font-bold font-termina align-middle inline-block leading-0"><?php echo $site_name; ?></span><?php
 
                         }
-                    ?>
+                    ?></a>
                 </div>
             </div>
             <div class="flex space-x-4 items-center hidden sm:block">
@@ -120,7 +121,7 @@
 
                         ?>
                         <a href="<?php echo $menu_item->url; ?>"
-                           class="text-gray-600 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><?php echo $menu_item->title; ?></a>
+                           class=" hover:text-primary-dark active:text-primary px-3 py-2 rounded-md text-sm font-medium <?php echo /** @global WP_Query $wp_query */ $wp_query->queried_object->ID == $menu_item->object_id ? 'text-primary-dark' : 'text-gray-900' ?>"><?php echo $menu_item->title; ?></a>
                         <?php
 
                     }
@@ -141,7 +142,7 @@
 
                     ?>
                     <a href="<?php echo $menu_item->url; ?>"
-                       class="text-gray-500 hover:bg-gray-600 hover:text-gray-400 block px-3 py-2 rounded-md text-base font-medium"><?php echo $menu_item->title; ?></a>
+                       class="block px-3 py-2 rounded-md text-base font-medium <?php echo $wp_query->queried_object->ID == $menu_item->object_id ? 'text-primary-dark' : 'text-gray-900'  ?>"><?php echo $menu_item->title; ?></a>
                     <?php
 
                 }
