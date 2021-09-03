@@ -65,8 +65,8 @@
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
                 <button type="button"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                        aria-controls="mobile-menu" aria-expanded="false">
+                        class="inline-flex items-center justify-center p-2 rounded-md text-primary-dark focus:outline-none focus:ring-2 "
+                        aria-controls="mobile-menu" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                     <span class="sr-only">Open main menu</span>
                     <!--
                       Icon when menu is closed.
@@ -132,7 +132,7 @@
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
+    <div class="hidden sm:hidden transition" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 
