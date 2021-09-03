@@ -9,6 +9,10 @@
                 while (have_posts()) : the_post();
                     ?>
                     <h1 class="text-primary font-termina font-bold mt-10 !pb-10"><?php the_title() ?></h1>
+                    <?php
+                    if (is_single()) {
+                        ?><p class="text-light"><?php the_date() ?></p><?php
+                    } ?>
                     <div class="font-light flex">
                         <div class="w-3/4">
                             <?php the_content(); ?>

@@ -30,14 +30,18 @@ module.exports = {
             DEFAULT: ["itc-avant-garde-gothic-pro", "sans-serif"]
         },
         extend: {
+            container: {
+                center: true,
+            },
             colors: {
                 primary: {
                     dark: '#9c136c',
                     DEFAULT: 'var(--e-global-color-primary, #AD1578)'
-                }
+                },
+                dark: 'var(--e-global-color-text, #341129)'
             },
             height: {
-                144 : '36rem'
+                144: '36rem'
             }
         },
     },

@@ -16,7 +16,7 @@ require_once __DIR__ . '/functions.php';
     <title><?php wp_title('|', true, 'right'); ?></title>
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(["font-normal !font-DEFAULT"]); ?>>
+<body <?php body_class(["font-normal !font-DEFAULT", "text-dark"]); ?>>
 <?php wp_body_open();
 
 get_template_part('template-parts/header')

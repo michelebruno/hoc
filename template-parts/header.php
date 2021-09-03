@@ -28,7 +28,7 @@
     //		'depth'                => 0,
     //		'walker'               => '',
     //		'theme_location'       => '',
-    //       Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"
+    //       Current: "bg-dark text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"
 
     $menu_items = wp_get_nav_menu_items(wp_get_nav_menu_name('primary'));
 
@@ -108,7 +108,7 @@
                                  alt="Workflow">
                             <?php
                         } elseif ($site_name) {
-?><span class="text-lg text-gray-900 font-bold font-termina align-middle inline-block leading-0"><?php echo $site_name; ?></span><?php
+?><span class="text-lg text-dark font-bold font-termina align-middle inline-block leading-0"><?php echo $site_name; ?></span><?php
 
                         }
                     ?></a>
@@ -121,7 +121,7 @@
 
                         ?>
                         <a href="<?php echo $menu_item->url; ?>"
-                           class=" hover:text-primary-dark active:text-primary px-3 py-2 rounded-md text-sm font-medium <?php echo /** @global WP_Query $wp_query */ $wp_query->queried_object->ID == $menu_item->object_id ? 'text-primary-dark' : 'text-gray-900' ?>"><?php echo $menu_item->title; ?></a>
+                           class=" hover:text-primary-dark active:text-primary px-3 py-2 rounded-md text-sm font-medium <?php echo /** @global WP_Query $wp_query */ $wp_query->queried_object->ID == $menu_item->object_id ? 'text-primary-dark' : 'text-dark' ?>"><?php echo $menu_item->title; ?></a>
                         <?php
 
                     }
@@ -134,7 +134,7 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="hidden sm:hidden transition" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <!-- Current: "bg-dark text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 
             <?php
 
@@ -142,7 +142,7 @@
 
                     ?>
                     <a href="<?php echo $menu_item->url; ?>"
-                       class="block px-3 py-2 rounded-md text-base font-medium <?php echo $wp_query->queried_object->ID == $menu_item->object_id ? 'text-primary-dark' : 'text-gray-900'  ?>"><?php echo $menu_item->title; ?></a>
+                       class="block px-3 py-2 rounded-md text-base font-medium <?php echo $wp_query->queried_object->ID == $menu_item->object_id ? 'text-primary-dark' : 'text-dark'  ?>"><?php echo $menu_item->title; ?></a>
                     <?php
 
                 }
