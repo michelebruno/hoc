@@ -21,6 +21,7 @@ require_once __DIR__ . '/functions.php';
 
 get_template_part('template-parts/header')
 ?>
+<main>
 
 
 

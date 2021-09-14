@@ -5,264 +5,283 @@
 /* purgecss start ignore */
 
 body {
-    --swiper-theme-color: theme('colors.primary.DEFAULT');
-    --swiper-navigation-color: theme('colors.primary.DEFAULT');
-    --e-global-typography-primary-font-family: theme('fontFamily.termina') !important;
-    --e-global-typography-text-font-family: itc-avant-garde-gothic-pro, sans-serif !important;
-    font-family: itc-avant-garde-gothic-pro, sans-serif !important;
+  --swiper-theme-color: theme('colors.primary.DEFAULT');
+  --swiper-navigation-color: theme('colors.primary.DEFAULT');
+  --e-global-typography-primary-font-family: theme('fontFamily.termina') !important;
+  --e-global-typography-text-font-family: itc-avant-garde-gothic-pro, sans-serif !important;
+  font-family: itc-avant-garde-gothic-pro, sans-serif !important;
 }
 
 p {
-    margin-bottom: 1.5rem;
-    margin-top: .5rem;
+  margin-bottom: 1.5rem;
+  margin-top: .5rem;
 }
 
 ion-icon {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 h1 {
-    @apply text-5xl;
+  @apply text-5xl;
 }
 
 h2 {
-    @apply text-4xl mb-6;
+  @apply text-4xl mb-6;
 }
+
 h2 {
-    @apply text-3xl mb-5;
+  @apply text-3xl mb-5;
 }
 
 .site-navigation a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 @media (min-width: 1200px) {
-    .site-header, body:not([class*=elementor-page-]) .site-main {
-        max-width: 1140px !important;
-    }
+  .site-header, body:not([class*=elementor-page-]) .site-main {
+    max-width: 1140px !important;
+  }
 }
 
 
 .termina,
 .elementor-heading-title, .termina .elementor-heading-title {
-    font-family: termina !important;
+  font-family: termina !important;
 }
 
 .impact-item {
-    border-bottom: 1px solid var(--e-global-color-secondary);
-    margin-bottom: 5px !important;
+  border-bottom: 1px solid var(--e-global-color-secondary);
+  margin-bottom: 5px !important;
 }
 
 .impact-heading {
-    margin: 0;
-    font-size: 2em;
-    font-weight: 700;
-    color: var(--e-global-color-primary);
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--e-global-color-primary);
 }
 
 .impact-label {
-    margin-bottom: 5px !important;
-    font-size: 1.4em;
+  margin-bottom: 5px !important;
+  font-size: 1.4em;
 }
 
 .mb-0 p {
-    margin-bottom: 5px !important;
+  margin-bottom: 5px !important;
 }
 
 h1 {
-    padding: 0 0 .6em 0 !important;
+  padding: 0 0 .6em 0 !important;
 }
 
 .campidiscipinari {
-    /*padding: 1.5em 1em 1em ;*/
-    /*border-radius: 15px;*/
-    /*background-color: var(--e-global-color-primary);*/
-    /*transition: all 300ms ease;*/
-    /*margin: auto;*/
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
+  /*padding: 1.5em 1em 1em ;*/
+  /*border-radius: 15px;*/
+  /*background-color: var(--e-global-color-primary);*/
+  /*transition: all 300ms ease;*/
+  /*margin: auto;*/
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 1000px) {
-    /*.campidiscipinari {*/
-    /*    width: 80%;*/
-    /*}*/
-    .home .campidiscipinari {
-        width: 60%;
-    }
+  /*.campidiscipinari {*/
+  /*    width: 80%;*/
+  /*}*/
+  .home .campidiscipinari {
+    width: 60%;
+  }
 }
 
 .campidiscipinari:hover {
-    /*background-color: #9c136c;*/
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  /*background-color: #9c136c;*/
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .campidiscipinari img {
-    /*width: 80%;*/
-    /*display: block;*/
-    /*margin: auto;*/
+  /*width: 80%;*/
+  /*display: block;*/
+  /*margin: auto;*/
 }
 
 .campidiscipinari .label {
-    /*text-align: center;*/
-    /*color: white;*/
-    /*font-size: 1em;*/
-    line-height: 1;
-    /*padding-top: 1.4em;*/
-    /*font-weight: 700;*/
-    text-decoration: none;
-    /*margin: 0 !important;*/
+  /*text-align: center;*/
+  /*color: white;*/
+  /*font-size: 1em;*/
+  line-height: 1;
+  /*padding-top: 1.4em;*/
+  /*font-weight: 700;*/
+  text-decoration: none;
+  /*margin: 0 !important;*/
 }
 
 
 .team-member .elementor-widget-text-editor {
-    text-align: center;
+  text-align: center;
 }
 
 .team-member .elementor-widget-text-editor h4 {
-    font-size: 1.2em;
-    margin: 0.3em 0 !important;
+  font-size: 1.2em;
+  margin: 0.3em 0 !important;
 }
 
 .team-member .elementor-widget-text-editor .label {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .lead {
-    font-size: 1.5em;
-    font-weight: 500;
-    line-height: 1.1;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.1;
 }
 
 .lead p, .mb-0 p {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .marquee {
-    @apply whitespace-nowrap;
-    color: transparent !important;
-    /*white-space: nowrap;*/
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--e-global-color-primary);
-    animation: marquee 25s linear alternate infinite;
+  @apply whitespace-nowrap;
+  color: transparent !important;
+  /*white-space: nowrap;*/
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--e-global-color-primary);
+  animation: marquee 25s linear alternate infinite;
 }
 
 .marquee h2 {
-    color: transparent !important;
-    font-size: 5em;
+  color: transparent !important;
+  font-size: 5em;
 
 }
 
 @keyframes marquee {
-    to {
-        margin-left: -80%;
-    }
-    from {
-        margin-left: 0;
-    }
+  to {
+    margin-left: -80%;
+  }
+  from {
+    margin-left: 0;
+  }
 }
 
 .custom-logo {
-    max-width: 40%
+  max-width: 40%
 }
 
 .section-padding,
 .section-padding-top {
-    padding-top: 2em;
+  padding-top: 2em;
 }
 
 .section-padding,
 .section-padding-bottom {
-    padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 
 .project-name {
-    @apply font-termina text-primary mb-0 font-bold text-3xl;
+  @apply font-termina text-primary mb-0 font-bold text-3xl;
 }
 
 .project-label {
-    @apply text-sm mt-0;
+  @apply text-sm mt-0;
 }
 
 .project-descr {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .clip1 {
-    border-radius: 3em 3em 0 3em;
-    overflow: hidden;
+  border-radius: 3em 3em 0 3em;
+  overflow: hidden;
 }
 
 .clip2 {
-    border-radius: 3em 3em 3em 0;
-    overflow: hidden;
+  border-radius: 3em 3em 3em 0;
+  overflow: hidden;
 }
 
 .clip3 {
-    border-radius: 3em 0 3em 3em;
-    overflow: hidden;
+  border-radius: 3em 0 3em 3em;
+  overflow: hidden;
 }
 
 .clip4 {
-    border-radius: 0 3em 3em 3em;
-    overflow: hidden;
+  border-radius: 0 3em 3em 3em;
+  overflow: hidden;
 }
 
 .clip5 {
-    border-radius: 0 3em 0 3em;
-    overflow: hidden;
+  border-radius: 0 3em 0 3em;
+  overflow: hidden;
 }
 
 .clip6 {
-    border-radius: 3em 0 3em 0;
-    overflow: hidden;
+  border-radius: 3em 0 3em 0;
+  overflow: hidden;
 }
 
 :is(.clip1, .clip2, .clip3, .clip4, .clip5, .clip6) img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 
 #site-footer {
-    display: none;
+  display: none;
 }
 
 .footer {
-    font-size: .85em;
-    color: #715869;
+  font-size: .85em;
+  color: #715869;
 }
 
 .footer a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer ul {
-    list-style: none;
-    padding-left: 0;
-    column-count: 2;
+  list-style: none;
+  padding-left: 0;
+  column-count: 2;
 }
 
 .footer ul a {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .footer :nth-child(4) img {
-    /*width: 100%;*/
+  /*width: 100%;*/
 }
 
 /* purgecss end ignore */
 .hoc-projects-swiper .swiper-slide {
-    box-shadow: 0 10px 8px rgba(173, 21, 120, 0.25);
+  box-shadow: 0 10px 8px rgba(173, 21, 120, 0.25);
 }
 
 
 .hoc-news-swiper :where(.swiper-button-next, .swiper-button-prev) {
-    background-image: none !important;
+  background-image: none !important;
 }
 
+@layer base {
 
+  main {
+
+    a {
+      @apply text-primary hover:text-primary-dark;
+    }
+
+    ul {
+      @apply pl-8 pb-2;
+      list-style: initial;
+
+      li {
+        @apply pb-2;
+      }
+    }
+  }
+
+}
 @tailwind components;
 @tailwind utilities;
 
