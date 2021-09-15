@@ -9,7 +9,7 @@ module.exports = {
             './elementor/**/*.php',
             './single.php',
             './index.php',
-            './single.php',
+            './singular.php',
             './page.php',
             './header.php',
             './footer.php',

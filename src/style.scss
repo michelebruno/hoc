@@ -9,6 +9,7 @@ body {
   --swiper-navigation-color: theme('colors.primary.DEFAULT');
   --e-global-typography-primary-font-family: theme('fontFamily.termina') !important;
   --e-global-typography-text-font-family: itc-avant-garde-gothic-pro, sans-serif !important;
+  --e-global-typography-primary-font-weight: 700 !important;
   font-family: itc-avant-garde-gothic-pro, sans-serif !important;
 }
 
@@ -29,14 +30,16 @@ h2 {
   @apply text-4xl mb-6;
 }
 
-h2 {
+h3 {
   @apply text-3xl mb-5;
 }
 
 .site-navigation a {
   text-decoration: none !important;
 }
-
+h1,h2,t3,h4 {
+  font-weight: 500;
+}
 @media (min-width: 1200px) {
   .site-header, body:not([class*=elementor-page-]) .site-main {
     max-width: 1140px !important;
@@ -252,8 +255,9 @@ h1 {
 .footer :nth-child(4) img {
   /*width: 100%;*/
 }
-
-/* purgecss end ignore */
+.swiper {
+  @apply pb-6 md:pb-8;
+}
 .hoc-projects-swiper .swiper-slide {
   box-shadow: 0 10px 8px rgba(173, 21, 120, 0.25);
 }
@@ -262,7 +266,6 @@ h1 {
 .hoc-news-swiper :where(.swiper-button-next, .swiper-button-prev) {
   background-image: none !important;
 }
-
 @layer base {
 
   main {
@@ -279,9 +282,17 @@ h1 {
         @apply pb-2;
       }
     }
+
+
   }
 
 }
+
+article .elementor > .elementor-section-wrap > section > .elementor-column-gap-default> .elementor-column > .elementor-element-populated {
+  padding: 0 !important;
+}
+/* purgecss end ignore */
+
 @tailwind components;
 @tailwind utilities;
 

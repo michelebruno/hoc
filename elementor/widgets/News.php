@@ -56,15 +56,15 @@
             if (have_posts()) {
                 the_post();
                 ?>
-                <div class="swiper hoc-news-swiper px-16">
+                <div class="swiper hoc-news-swiper px-8 md:px-16">
                 <div class="swiper-wrapper"><?php
                         while (have_posts()) {
                             the_post();
                             ?>
-                            <div class="swiper-slide h-full">
+                            <div class="swiper-slide ">
 
                                 <div class="
-                                grid grid-cols-2 gap-6
+                                grid md:grid-cols-2 gap-6
                                 m-4
                                 rounded-lg overflow-hidden
                                 shadow-lg">
@@ -73,14 +73,15 @@
                                             "class" => "h-full w-full object-cover"
                                         ]); ?>
                                     </div>
-                                    <div class="py-6 pr-4">
-
-                                        <h3 class="text-xl text-primary font-termina font-bold"><?php the_title() ?></h3>
-                                        <p><?php the_excerpt(); ?></p>
-                                        <a href="<?php the_permalink(); ?>" class="
-                                            rounded-xl inline-block text-sm
+                                    <div class="pb-4 lg:py-6 px-4 lg:pr-4">
+                                        <h3 class="text-xl text-primary font-termina font-bold mb-4"><?php the_title() ?></h3>
+                                         <p class="my-0">
+                                            <a href="<?php the_permalink(); ?>" class="
+                                            rounded-xl inline-block text-sm  text-center
                                             py-2 px-4 border-primary border-2 text-primary
                                         ">Leggi</a>
+                                        </p>
+
                                     </div>
                                 </div>
 
