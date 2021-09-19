@@ -107,16 +107,17 @@
             $progetti = $this->get_settings_for_display('progetti');
 
             ?>
-            <ul><?php
+            <?php
             foreach ($progetti as $progetto) {
 
                 ?>
-                <li>
-                    <?php echo $progetto['nome']; ?>
-                </li>
+                <div class="border-l-primary border-l px-4 my-4">
+                    <h2 class="!text-2xl mb-4"><?php echo $progetto['nome']; ?> <span class="text-sm text-dark">(<?php echo $progetto['area'] . " / " . $progetto["anno"]?>)</span></h2>
+                    <p><?php echo $progetto['descrizione'] ?></p>
+                </div>
                 <?php
             }
-            ?></ul><?php
+            ?><?php
         }
 
 
