@@ -5,7 +5,7 @@ module.exports = {
         content: [
             // './src/**/*.php',
             './template-parts/**/*.php',
-            './elementor/*.php',
+            './elementor/**.php',
             './elementor/**/*.php',
             './single.php',
             './index.php',

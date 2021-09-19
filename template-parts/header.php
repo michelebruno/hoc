@@ -114,14 +114,14 @@
                     ?></a>
                 </div>
             </div>
-            <div class="flex space-x-4 items-center hidden sm:block">
+            <div class="flex space-x-2 items-center hidden sm:block">
                 <?php
 
                     foreach ($menu_items as $menu_item) {
 
                         ?>
                         <a href="<?php echo $menu_item->url; ?>"
-                           class=" hover:text-primary-dark active:text-primary px-3 py-2 rounded-md text-sm font-medium <?php echo /** @global WP_Query $wp_query */ $wp_query->queried_object->ID == $menu_item->object_id ? 'text-primary-dark' : 'text-dark' ?>"><?php echo $menu_item->title; ?></a>
+                           class=" hover:text-primary-dark active:text-primary px-3 py-2 rounded-md text-sm font-medium  <?php echo /** @global WP_Query $wp_query */ $wp_query->queried_object->ID == $menu_item->object_id ? 'underline' : '!no-underline' ?>"><?php echo $menu_item->title; ?></a>
                         <?php
 
                     }

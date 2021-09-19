@@ -22,6 +22,10 @@ ion-icon {
   vertical-align: middle;
 }
 
+* {
+  text-underline-offset: .3em;
+}
+
 h1 {
   @apply text-5xl;
 }
@@ -122,18 +126,32 @@ h1 {
   /*margin: 0 !important;*/
 }
 
+.team-member {
+  .elementor-widget:first-child {
+    margin-bottom: 0;
+  }
+  .elementor-widget-text-editor {
+    text-align: center;
+  }
 
-.team-member .elementor-widget-text-editor {
-  text-align: center;
-}
+  .elementor-widget-text-editor h4 {
+    font-size: 1.2em;
+    line-height: 1.15;
+    font-weight: 500;
+    margin: 0.3em 0 !important;
+  }
 
-.team-member .elementor-widget-text-editor h4 {
-  font-size: 1.2em;
-  margin: 0.3em 0 !important;
-}
+  .elementor-widget-text-editor .label {
+    font-size: 14px;
+  }
 
-.team-member .elementor-widget-text-editor .label {
-  font-size: 14px;
+  img {
+    max-height: 100%;
+    min-width: 100%;
+    padding: 1rem;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
 }
 
 .lead {
@@ -266,7 +284,7 @@ h1 {
 }
 
 .hoc-projects-swiper .swiper-slide {
-  box-shadow: 0 10px 8px rgba(173, 21, 120, 0.25);
+  box-shadow: 0px 0px 4px 2px rgba(173, 21, 120, 0.25);
 }
 
 

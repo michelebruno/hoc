@@ -77,8 +77,8 @@
                                         <h3 class="text-xl text-primary font-termina font-bold mb-4"><?php the_title() ?></h3>
                                          <p class="my-0">
                                             <a href="<?php the_permalink(); ?>" class="
-                                            rounded-xl inline-block text-sm  text-center
-                                            py-2 px-4 border-primary border-2 text-primary
+                                            rounded-xl inline-block text-sm  text-center !no-underline
+                                            py-2 px-4 border-primary border-2 text-primary leading-none
                                         ">Leggi</a>
                                         </p>
 
