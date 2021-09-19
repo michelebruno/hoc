@@ -42,7 +42,7 @@ h3 {
   text-decoration: none !important;
 }
 
-h1, h2, t3, h4 {
+h1, h2, h3, h4 {
   font-weight: 500;
 }
 
@@ -55,7 +55,7 @@ h1, h2, t3, h4 {
 
 .termina,
 .elementor-heading-title, .termina .elementor-heading-title {
-  font-family: termina !important;
+  font-family: termina, serif !important;
 }
 
 .impact-item {
@@ -284,7 +284,9 @@ h1 {
 }
 
 .hoc-projects-swiper .swiper-slide {
-  box-shadow: 0px 0px 4px 2px rgba(173, 21, 120, 0.25);
+
+
+  box-shadow: 0px 0px 2px 1px rgba(173, 21, 120, 1);
 }
 
 
