@@ -37,9 +37,11 @@ h3 {
 .site-navigation a {
   text-decoration: none !important;
 }
-h1,h2,t3,h4 {
+
+h1, h2, t3, h4 {
   font-weight: 500;
 }
+
 @media (min-width: 1200px) {
   .site-header, body:not([class*=elementor-page-]) .site-main {
     max-width: 1140px !important;
@@ -58,15 +60,18 @@ h1,h2,t3,h4 {
 }
 
 .impact-heading {
-  margin: 0;
+  margin: 10px 0 0;
   font-size: 2em;
   font-weight: 700;
+  line-height: 1;
   color: var(--e-global-color-primary);
 }
 
 .impact-label {
-  margin-bottom: 5px !important;
+  margin: 5px 0 10px !important;
   font-size: 1.4em;
+  line-height: 1;
+
 }
 
 .mb-0 p {
@@ -133,7 +138,7 @@ h1 {
 
 .lead {
   font-size: 1.5em;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.1;
 }
 
@@ -255,9 +260,11 @@ h1 {
 .footer :nth-child(4) img {
   /*width: 100%;*/
 }
+
 .swiper {
   @apply pb-6 md:pb-8;
 }
+
 .hoc-projects-swiper .swiper-slide {
   box-shadow: 0 10px 8px rgba(173, 21, 120, 0.25);
 }
@@ -266,6 +273,7 @@ h1 {
 .hoc-news-swiper :where(.swiper-button-next, .swiper-button-prev) {
   background-image: none !important;
 }
+
 @layer base {
 
   main {
@@ -288,9 +296,14 @@ h1 {
 
 }
 
-article .elementor > .elementor-section-wrap > section > .elementor-column-gap-default> .elementor-column > .elementor-element-populated {
-  padding: 0 !important;
+article .elementor > .elementor-section-wrap > section {
+  padding-top: 0 !important;
+
+  & > .elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+    padding: 0 !important;
+  }
 }
+
 /* purgecss end ignore */
 
 @tailwind components;

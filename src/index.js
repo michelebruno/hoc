@@ -6,7 +6,7 @@ import Swiper, {Autoplay, Navigation, Pagination} from 'swiper'
 
 function onDocReady() {
     const sw = new Swiper('.swiper.hoc-projects-swiper', {
-        modules: [Autoplay,Navigation, Pagination],
+        modules: [Autoplay, Navigation, Pagination],
         speed: 400,
         spaceBetween: 50,
         slidesPerView: 1,
@@ -15,7 +15,7 @@ function onDocReady() {
         autoplay: true,
         pagination: {
             el: ".swiper-pagination",
-            clickable:true,
+            clickable: true,
         },
         navigation: true,
         breakpoints: {
@@ -41,8 +41,9 @@ function onDocReady() {
         autoplay: true,
         pagination: {
             el: ".swiper-pagination",
+            clickable: true
         },
-     })
+    })
 
 }
 

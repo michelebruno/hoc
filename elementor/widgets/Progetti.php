@@ -155,7 +155,7 @@
 
                             <div class="p-4">
                                 <h3 class="my-4"><?php echo $progetto['titolo']; ?></h3>
-                                <p class="text-sm"><?php echo $progetto['descrizione']; ?></p>
+                                <p class="text-sm font-light"><?php echo $progetto['descrizione']; ?></p>
                             </div>
 
                             </div><?php

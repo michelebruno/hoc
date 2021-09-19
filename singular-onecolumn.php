@@ -1,4 +1,7 @@
 <?php
+/**
+ * Template Name: Colonna unica
+ */
     if (!defined('ABSPATH')) exit();
 
     get_header(); ?>
@@ -14,7 +17,7 @@
                         ?><p class="text-light"><?php the_date() ?></p><?php
                     } ?>
                     <div class="font-light">
-                        <div class="md:w-10/12 2xl:w-8/12">
+                        <div class="">
                             <?php the_content(); ?>
                         </div>
                     </div>
