@@ -8,9 +8,14 @@ body {
   --swiper-theme-color: theme('colors.primary.DEFAULT');
   --swiper-navigation-color: theme('colors.primary.DEFAULT');
   --e-global-typography-primary-font-family: theme('fontFamily.termina') !important;
-  --e-global-typography-text-font-family: itc-avant-garde-gothic-pro, sans-serif !important;
+  --e-global-typography-text-font-family:puffin-display-soft, sans-serif !important;
   --e-global-typography-primary-font-weight: 700 !important;
-  font-family: itc-avant-garde-gothic-pro, sans-serif !important;
+  font-family:puffin-display-soft, sans-serif !important;
+
+  min-height: 100vh;
+  &.admin-bar {
+    min-height: calc(100vh - 68px);
+  }
 }
 
 p {
@@ -286,7 +291,7 @@ h1 {
 .hoc-projects-swiper .swiper-slide {
 
 
-  box-shadow: 0px 0px 2px 1px rgba(173, 21, 120, 1);
+  box-shadow: 0 0 2px 1px rgba(173, 21, 120, 1);
 }
 
 

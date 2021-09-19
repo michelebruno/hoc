@@ -1,60 +1,60 @@
 <?php
     return [
-        0 => [
+        [
             'anno' => '2021',
             'nome' => 'Digital divide and COVID-19: which effects on students’ achievement?',
             'descrizione' => '2021-giugno/dicembre. Indagine sull\'effetto del “digital divide” rispetto alle performance degli studenti, come conseguenza della pandemia di COVID-19.',
             'area' => 'Scuola',
         ],
-        1 => [
+        [
             'anno' => '2021',
             'nome' => 'Action for 5G-edu',
             'descrizione' => '2021-2022. Come utilizzare la Realtà Aumentata a scuola e nella formazione professionale rappresentando “concetti” virtuali piuttosto che “oggetti” virtuali. In collaborazione con VODAFONE e la start-up FifthIngenium.',
             'area' => 'Scuola',
         ],
-        2 => [
+        [
             'anno' => '2020',
             'nome' => 'TWIN',
             'descrizione' => '2020-2022. Sulla rigenerazione territoriale, il turismo lento, il recupero di edifici o aree dismesse e l’inclusione sociale. Progetto finanziato dal Politecnico di Milano, nell\'ambito del programma “Polisocial”. www.twin.polimi.it',
             'area' => 'Società',
         ],
-        3 => [
+        [
             'anno' => '2020',
             'nome' => 'EIT-Urban Mobility',
             'descrizione' => '2020-2021. Nell\'ambito dei programmi Horizon 2020 e Horizon Europe, preparazione di un MOOC (Massive Online Open Course) su “Grant Writing” (2020) e organizzazione di una Summer School in collaborazione con l\'Università di Rennes (luglio 2021) per l\'EIT Master School Urban Mobility (programma di doppia laurea cofinanziato dall\'Istituto Europeo di Innovazione e Tecnologia).',
             'area' => 'Scuola',
         ],
-        4 => [
+        [
             'anno' => '2020',
             'nome' => 'BASE5G',
             'descrizione' => '2020-2022. Utilizzo di Realtà Virtuale e Aumentata per migliorare i processi di insegnamento/apprendimento. In collaborazione con Vodafone, AKKA, LIFE, ANOTHEREALITY, YAPE.',
             'area' => 'Scuola',
         ],
-        5 => [
+        [
             'anno' => '2018',
             'nome' => 'ELSE',
             'descrizione' => '2018-2021. Ambienti di apprendimento e simulazione eco/logici nell\'istruzione superiore (programma Erasmus+). Un progetto per estendere il modello della classe rovesciata all\'istruzione superiore tramite ambienti di simulazione e un sistema di raccolta della “risposta” degli studenti. www.elseproject.eu ',
             'area' => 'Scuola',
         ],
-        6 => [
+        [
             'anno' => '2018',
             'nome' => 'VODAFONE 5G ',
             'descrizione' => '2018-2020. Sull\'uso della realtà virtuale e aumentata per valorizzare il turismo culturale (caso d\'uso “Turismo 4.0”).',
             'area' => 'Beni culturali',
         ],
-        7 => [
+        [
             'anno' => '2018',
             'nome' => 'SCAR',
             'descrizione' => '2018-2021. Sul ruolo delle scuole per migliorare la comprensione e la comunicazione delle aree urbane periferiche. Progetto finanziato dal Politecnico di Milano, nell\'ambito del programma “Polisocial". www.scar.polimi.it',
             'area' => 'Scuola',
         ],
-        8 => [
+        [
             'anno' => '2017',
             'nome' => 'EIT-Digital',
             'descrizione' => '2017-in corso. Nell\'ambito dei programmi Horizon 2020 e Horizon Europe, diverse azioni per valorizzare i corsi Innovation & Entrepreneurship della EIT Digital Master School (programma di doppia laurea co-finanziato dall\'Istituto Europeo di Innovazione e Tecnologia), con approcci educativi innovativi volti a promuovere il talento digitale imprenditoriale “a forma di T” tra gli studenti di Ingegneria Informatica.',
             'area' => 'Scuola',
         ],
-        9 => [
+        [
             'anno' => '2017',
             'nome' => 'EIT-Digital/MOOC',
             'descrizione' => '2017. Sviluppo di un MOOC (Massive Online Open Course) per Coursera, sul corso “Recommender System” del prof. P. Cremonesi, del Politecnico di Milano.',

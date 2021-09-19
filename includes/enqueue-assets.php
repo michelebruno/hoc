@@ -44,6 +44,11 @@
             $frontendAssets["version"],
             true);
 
+
+        if (WP_DEBUG) {
+            wp_enqueue_script('livereload', 'http://localhost:35729/livereload.js?snipver=1');
+        }
+
     }
 
 

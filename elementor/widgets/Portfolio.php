@@ -73,9 +73,9 @@
                 ]
             );
 
-            $defaults = include __DIR__ . "\portfolio-defaults.php";
+            $defaults = require __DIR__ . "/portfolio-defaults.php";
 
-             $this->add_control(
+            $this->add_control(
                 'progetti',
                 [
                     'label' => __('Progetti'),
@@ -106,14 +106,17 @@
         {
             $progetti = $this->get_settings_for_display('progetti');
 
-            $this->log_settings();
-
-            foreach ($progetti as $progetto) {
-                echo $progetto['nome'];
             ?>
+            <ul><?php
+            foreach ($progetti as $progetto) {
 
-            <?php
+                ?>
+                <li>
+                    <?php echo $progetto['nome']; ?>
+                </li>
+                <?php
             }
+            ?></ul><?php
         }
 
 
