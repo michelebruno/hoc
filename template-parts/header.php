@@ -33,30 +33,6 @@
     $menu_items = wp_get_nav_menu_items(wp_get_nav_menu_name('primary'));
 
 ?>
-<header id="site-header" class="site-header hidden" role="banner">
-
-    <div class="site-branding">
-        <?php
-            if (has_custom_logo()) {
-                the_custom_logo();
-            } elseif ($site_name) {
-                ?>
-                <h1 class="site-title">
-                    <a href="<?php echo esc_url(home_url('/')); ?>"
-                       title="<?php esc_attr_e('Home', 'hello-elementor'); ?>" rel="home">
-                        <?php echo esc_html($site_name); ?>
-                    </a>
-                </h1>
-                <p class="site-description">
-                    <?php
-                        if ($tagline) {
-                            echo esc_html($tagline);
-                        }
-                    ?>
-                </p>
-            <?php } ?>
-    </div>
-</header>
 
 
 <nav class="shadow-lg sticky top-0 bg-white z-50">
@@ -98,17 +74,10 @@
                     <a class="block" href="<?php echo get_home_url(); ?>">
                     <?php
 
-                        if (has_custom_logo()) {
-                            the_custom_logo();
-                            ?>
-                            <img class="block lg:hidden h-8 w-auto"
-                                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
-                            <img class="hidden lg:block h-8 w-auto"
-                                 src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                                 alt="Workflow">
-                            <?php
+                        if ($site_icon =get_option("site_icon")) {
+                           echo wp_get_attachment_image($site_icon, 'thumbnail', false, ['class' => "h-12 w-12 block"]);
                         } elseif ($site_name) {
-?><span class="text-lg text-dark font-bold font-termina align-middle inline-block leading-0"><?php echo $site_name; ?></span><?php
+?><span class="text-lg text-dark font-bold font-termina align-middle inline-block leading-0"><?php echo $site_name ; ?></span><?php
 
                         }
                     ?></a>
