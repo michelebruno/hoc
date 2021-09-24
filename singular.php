@@ -8,14 +8,15 @@
             if (have_posts()) :
                 while (have_posts()) : the_post();
                     ?>
-                    <h1 class="text-primary font-termina font-bold mt-10 !pb-10 lg:mt-16"><?php the_title() ?></h1>
-                    <?php
-                    if (is_single()) {
-                        ?><p class="text-light"><?php the_date() ?></p><?php
-                    } ?>
-                    <div class="font-light">
-                        <div class="md:w-10/12 2xl:w-8/12">
-                            <?php the_content(); ?>
+                    <div class="md:w-10/12 2xl:w-8/12 mx-auto">
+
+                        <h1 class="text-primary font-termina font-bold mt-10 !pb-10 lg:mt-16"><?php the_title() ?></h1>
+                        <?php
+                        if (is_single()) {
+                            ?><p class="text-light"><?php the_date() ?></p><?php
+                        } ?>
+                        <div class="font-light">
+                                <?php the_content(); ?>
                         </div>
                     </div>
 

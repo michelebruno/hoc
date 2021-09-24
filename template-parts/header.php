@@ -41,7 +41,7 @@
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
                 <button type="button"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-primary-dark focus:outline-none focus:ring-2 "
+                        class="inline-flex items-center justify-center p-2 rounded-md !text-primary-dark focus:outline-none focus:ring-2 "
                         aria-controls="mobile-menu" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                     <span class="sr-only">Open main menu</span>
                     <!--
@@ -73,9 +73,11 @@
                 <div class="flex-shrink-0 flex items-center">
                     <a class="block" href="<?php echo get_home_url(); ?>">
                     <?php
-
-                        if ($site_icon =get_option("site_icon")) {
-                           echo wp_get_attachment_image($site_icon, 'thumbnail', false, ['class' => "h-12 w-12 block"]);
+                        $site_icon = get_option("site_icon");
+                        $site_logo = get_option("site_logo");
+                        if ($site_icon ) {
+                           echo wp_get_attachment_image($site_icon, 'thumbnail', false, ['class' => "h-12 w-12 hidden md:block"]);
+                           echo wp_get_attachment_image($site_logo, 'medium', false, ['class' => "h-12 w-24 block md:hidden object-contain"]);
                         } elseif ($site_name) {
 ?><span class="text-lg text-dark font-bold font-termina align-middle inline-block leading-0"><?php echo $site_name ; ?></span><?php
 
@@ -111,7 +113,7 @@
 
                     ?>
                     <a href="<?php echo $menu_item->url; ?>"
-                       class="block px-3 py-2 rounded-md text-base font-medium <?php echo $wp_query->queried_object->ID == $menu_item->object_id ? 'text-primary-dark' : 'text-dark'  ?>"><?php echo $menu_item->title; ?></a>
+                       class="block px-3 py-2 rounded-md text-base font-medium <?php echo /** @global WP_Query $wp_query */ $wp_query->queried_object->ID == $menu_item->object_id ? 'underline' : '!no-underline' ?>"><?php echo $menu_item->title; ?></a>
                     <?php
 
                 }

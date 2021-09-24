@@ -30,4 +30,4 @@
         register_nav_menu('primary', __('Primary Menu', 'hoc'));
     }
 
-
+    add_theme_support( 'custom-logo');

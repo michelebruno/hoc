@@ -148,7 +148,7 @@
                     bg-white">
                             <div class="h-1/2 w-full">
                                 <?php echo wp_get_attachment_image($progetto['immagine']['id'], 'large', false, [
-                                    "class" => "w-full h-full object-cover"
+                                    "class" => "!w-full !h-full block object-cover"
                                 ]) ?>
                             </div>
 
