@@ -46,13 +46,13 @@
 
 
         if (WP_DEBUG) {
-//            wp_enqueue_script('livereload', 'http://localhost:35729/livereload.js?snipver=1');
+            wp_enqueue_script('livereload', 'http://localhost:35729/livereload.js?snipver=1');
         }
 
     }
 
 
-    add_action('wp_enqueue_scripts', 'turbo_addons_scripts', 999);
+    add_action('wp_enqueue_scripts', 'turbo_addons_scripts', 999999);
 
     function turbo_addons_inline_footer()
     {

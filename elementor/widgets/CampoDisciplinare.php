@@ -79,7 +79,7 @@ class CampoDisciplinare extends Base
         lg:w-4/5
         bg-primary hover:bg-primary-dark
         px-4 py-6 rounded-lg">
-            <a href="" class="block w-full h-full no-underline group-hover:no-underline">
+            <a href="<?php echo $this->get_settings_for_display('website_link')['url'] ?>" class="block w-full h-full no-underline group-hover:no-underline">
                 <?php echo wp_get_attachment_image($image['id'], 'large', false, [
                         'class' => "w-9/12 block m-auto"
                 ]); ?>

@@ -131,7 +131,6 @@
         {
             $progetti = $this->get_settings_for_display('progetti');
 
-            $this->log_settings();
             ?>
             <div class="swiper swiper-container hoc-projects-swiper px-1 pb-6 ">
                 <!-- Additional required wrapper -->
