@@ -30,7 +30,6 @@
         {
             $this->start_controls_section('controlli');
 
-
             $this->end_controls_section();
 
         }
@@ -73,8 +72,11 @@
                                             "class" => "h-full w-full object-cover"
                                         ]); ?>
                                     </div>
-                                    <div class="pb-4 lg:py-6 px-4 lg:pr-4">
-                                        <h3 class="text-xl text-primary font-termina font-bold mb-4"><?php the_title() ?></h3>
+                                    <div class="pb-4 lg:py-6 px-4 lg:pr-4 flex flex-col justify-between">
+                                        <div>
+                                            <h3 class="text-xl text-primary font-termina font-bold mb-4"><?php the_title() ?></h3>
+                                            <p class="text-light"><ion-icon name="calendar-outline"></ion-icon> <?php the_date() ?></p>
+                                        </div>
                                          <p class="my-0">
                                             <a href="<?php the_permalink(); ?>" class="
                                             rounded-xl inline-block text-sm  text-center !no-underline

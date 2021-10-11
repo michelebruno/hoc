@@ -39,6 +39,10 @@ function onDocReady() {
         // loop: true,
         // freeMode: true,
         autoplay: true,
+        navigation:  {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true
