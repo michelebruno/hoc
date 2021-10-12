@@ -73,6 +73,22 @@
                 ]
             );
 
+            $repeater->add_control(
+                'category',
+                [
+                    'label' => __('Category'),
+                    'type' => \Elementor\Controls_Manager::SELECT2,
+                    'multiple' => true,
+                    'options' => [
+                        'scuola' => 'Scuola',
+                        'beni' => 'Beni culturali',
+                        'societa' => 'Società',
+                    ],
+                    'default' => ['scuola'],
+                ]
+            );
+
+
             $defaults = require __DIR__ . "/portfolio-defaults.php";
 
             $this->add_control(
@@ -107,12 +123,31 @@
             $progetti = $this->get_settings_for_display('progetti');
 
             ?>
+            <div>
+                <button data-filter="scuola">Scuola</button>
+                <button data-filter="beni">Beni culturali</button>
+                <button data-filter="societa">Societa</button>
+            </div>
             <?php
             foreach ($progetti as $progetto) {
 
+                $area = "";
+
+                foreach ($progetto['category'] as $cat) {
+                    $area .= __($cat, "hoc") . " - ";
+                }
+
+                $area = trim($area, " \-");
                 ?>
-                <div class="border-l-primary border-l px-4 my-4">
-                    <h2 class="!text-2xl mb-4"><?php echo $progetto['nome']; ?> <span class="text-sm text-dark">(<?php echo $progetto['area'] . " / " . $progetto["anno"]?>)</span></h2>
+                <div class="border-l-primary border-l px-4 my-4" <?php
+
+                    foreach ($progetto['category'] as $cat) {
+                        echo "data-" . $cat . "=\"true\" ";
+                    }
+                ?>>
+                    <h2 class="!text-2xl mb-4"><?php echo $progetto['nome']; ?> <span
+                                class="text-sm text-dark">(<?php echo $area . " / " . $progetto["anno"] ?>)</span>
+                    </h2>
                     <p><?php echo $progetto['descrizione'] ?></p>
                 </div>
                 <?php

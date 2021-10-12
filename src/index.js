@@ -49,6 +49,12 @@ function onDocReady() {
         },
     })
 
+    document.querySelectorAll('[data-filter]').forEach(i => {
+        i.addEventListener('click', e => {
+            let filter = e.target.dataset.filter
+            console.log(filter)
+        })
+    })
 }
 
 document.addEventListener('DOMContentLoaded', onDocReady, false);

@@ -209,10 +209,10 @@ h1 {
 
 @keyframes marquee {
   to {
-    margin-left: -80%;
+    transform: translateX(-60%);
   }
   from {
-    margin-left: 0;
+    transform: translateX(0);
   }
 }
 
