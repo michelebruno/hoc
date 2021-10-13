@@ -59,14 +59,23 @@ function onDocReady() {
         i.addEventListener('click', e => {
             if (e.target.dataset.active) {
                 projects.forEach(i => i.classList.remove('hidden'))
+
+                filterButtons.forEach(i => {
+                    i.removeAttribute('data-active')
+                    i.classList.remove(...activeClasses)
+
+                })
+                return;
             }
 
 
             let filter = e.target.dataset.filter
             filterButtons.forEach(i => {
                 if (i.dataset.filter === filter) {
+                    i.dataset.active = "true"
                     i.classList.add(...activeClasses)
                 } else {
+                    i.removeAttribute('data-active')
                     i.classList.remove(...activeClasses)
 
                 }

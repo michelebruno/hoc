@@ -153,7 +153,7 @@
                     }
                 ?>>
                     <h2 class="!text-2xl mb-4"><?php echo $progetto['nome']; ?> <span
-                                class="text-sm text-dark">(<?php echo $area . " / " . $progetto["anno"] ?>)</span>
+                                class="text-sm text-dark whitespace-nowrap">(<?php echo $area . " / " . $progetto["anno"] ?>)</span>
                     </h2>
                     <p><?php echo $progetto['descrizione'] ?></p>
                 </div>
@@ -162,5 +162,17 @@
             ?><?php
         }
 
+        protected function content_template() {
+            ?>
+            <# if ( settings.progetti.length ) { #>
+            <dl>
+                <# _.each( settings.progetti, function( item ) { #>
+                <dt class="elementor-repeater-item-{{ item._id }}">{{{ item.nome }}}</dt>
+                <dd>{{{ item.descrizione }}}</dd>
+                <# }); #>
+            </dl>
+            <# } #>
+            <?php
+        }
 
     }

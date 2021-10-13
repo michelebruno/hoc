@@ -75,12 +75,14 @@
                                     <div class="pb-4 lg:py-6 px-4 lg:pr-4 flex flex-col justify-between">
                                         <div>
                                             <h3 class="text-xl text-primary font-termina font-bold mb-4"><?php the_title() ?></h3>
-                                            <p class="text-light"><ion-icon name="calendar-outline"></ion-icon> <?php the_date() ?></p>
+                                            <p class="text-light !my-0"><ion-icon name="calendar-outline"></ion-icon> <?php the_date() ?></p>
+                                            <p class="text-sm text-light"><?php echo get_the_excerpt(); ?></p>
                                         </div>
-                                         <p class="my-0">
+                                         <p class="!my-0">
                                             <a href="<?php the_permalink(); ?>" class="
                                             rounded-xl inline-block text-sm  text-center !no-underline
                                             py-2 px-4 border-primary border-2 text-primary leading-none
+                                            !hover:text-primary-dark !hover:border-primary-dark
                                         ">Leggi</a>
                                         </p>
 
