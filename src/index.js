@@ -7,7 +7,7 @@ import Swiper, {Autoplay, Navigation, Pagination} from 'swiper'
 function onDocReady() {
     const sw = new Swiper('.swiper.hoc-projects-swiper', {
         modules: [Autoplay, Navigation, Pagination],
-        speed: 400,
+        speed: 800,
         spaceBetween: 50,
         slidesPerView: 1,
         // loop: true,
@@ -39,7 +39,7 @@ function onDocReady() {
         // loop: true,
         // freeMode: true,
         autoplay: true,
-        navigation:  {
+        navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
@@ -49,10 +49,35 @@ function onDocReady() {
         },
     })
 
-    document.querySelectorAll('[data-filter]').forEach(i => {
+    const filterButtons = document.querySelectorAll('[data-filter]');
+
+    const projects = document.querySelectorAll('[data-project]')
+
+    const activeClasses = ['!bg-primary', '!text-white']
+
+    filterButtons.forEach(i => {
         i.addEventListener('click', e => {
+            if (e.target.dataset.active) {
+                projects.forEach(i => i.classList.remove('hidden'))
+            }
+
+
             let filter = e.target.dataset.filter
-            console.log(filter)
+            filterButtons.forEach(i => {
+                if (i.dataset.filter === filter) {
+                    i.classList.add(...activeClasses)
+                } else {
+                    i.classList.remove(...activeClasses)
+
+                }
+            })
+
+            projects.forEach(i => {
+                if (i.dataset[filter]) {
+                    i.classList.remove('hidden')
+                } else i.classList.add('hidden')
+            })
+
         })
     })
 }

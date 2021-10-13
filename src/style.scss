@@ -43,8 +43,11 @@ h3 {
   @apply text-xl md:text-3xl mb-5;
 }
 
-.site-navigation a {
+nav a {
   text-decoration: none !important;
+  & > img {
+    display: inline ;
+  }
 }
 
 h1, h2, h3, h4 {

@@ -122,11 +122,18 @@
         {
             $progetti = $this->get_settings_for_display('progetti');
 
+            $cats = ["scuola", 'beni', 'societa'];
             ?>
             <div>
-                <button data-filter="scuola">Scuola</button>
-                <button data-filter="beni">Beni culturali</button>
-                <button data-filter="societa">Societa</button>
+                <?php
+                    pll_e('Filtra per categoria:');
+                    foreach ($cats as $cat) {
+                        ?>
+                        <button type="checkbox" data-filter="<?php echo $cat ?>" class="rounded-xl inline-block text-sm  text-center !no-underline
+                                            py-2 px-4 ml-2 border-primary border-2 text-primary leading-none hover:bg-primary active:bg-primary-dark hover:text-white hover:transition duration-500 "><?php pll_e($cat); ?></button>
+                        <?php
+                    }
+                ?>
             </div>
             <?php
             foreach ($progetti as $progetto) {
@@ -134,12 +141,12 @@
                 $area = "";
 
                 foreach ($progetto['category'] as $cat) {
-                    $area .= __($cat, "hoc") . " - ";
+                    $area .= pll__($cat) . " - ";
                 }
 
                 $area = trim($area, " \-");
                 ?>
-                <div class="border-l-primary border-l px-4 my-4" <?php
+                <div class="border-l-primary border-l px-4 my-4" data-project <?php
 
                     foreach ($progetto['category'] as $cat) {
                         echo "data-" . $cat . "=\"true\" ";

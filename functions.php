@@ -2,16 +2,6 @@
 
     if (!defined('ABSPATH')) exit;
 
-    /**
-     * Classi
-     */
-//require_once get_template_directory(__FILE__) . '/includes/class-post.php';
-
-    /**
-     * Shortcode Initializer.
-     */
-//require_once get_template_directory(__FILE__) . '/shortcodes/shortcodes.php';
-
 
     /**
      * Elementor extensions Initializer.
@@ -30,5 +20,31 @@
         register_nav_menu('primary', __('Primary Menu', 'hoc'));
     }
 
-    add_theme_support( 'custom-logo');
-    add_theme_support( 'post-thumbnails');
+    add_theme_support('custom-logo');
+    add_theme_support('post-thumbnails');
+
+
+    if (!function_exists('pll__')) {
+        function pll__($s)
+        {
+            return $s;
+        }
+    }
+    if (!function_exists('pll_e')) {
+        function pll_e($s)
+        {
+            echo $s;
+        }
+    }
+    if (!function_exists('pll_register_string')) {
+        function pll_register_string($name, $string, $context = 'polylang', $multiline = false)
+        {
+        }
+    }
+
+    pll_register_string("scuola", "scuola");
+    pll_register_string("beni", "beni");
+    pll_register_string("societa", "societa");
+    pll_register_string("filtra", "Filtra per categoria:");
+
+
