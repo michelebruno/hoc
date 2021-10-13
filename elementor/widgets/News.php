@@ -49,12 +49,12 @@
         {
 
             query_posts([
-                'post_type' => 'post'
+                'post_type' => 'post',
+                'post_status' => 'publish'
             ]);
 
             if (have_posts()) {
-                the_post();
-                ?>
+                 ?>
                 <div class="swiper hoc-news-swiper px-8 md:px-16">
                 <div class="swiper-wrapper"><?php
                         while (have_posts()) {
@@ -67,7 +67,7 @@
                                 m-4
                                 rounded-lg overflow-hidden
                                 shadow-lg">
-                                    <div>
+                                    <div style="aspect-ratio: 16/9">
                                         <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'large', false, [
                                             "class" => "h-full w-full object-cover"
                                         ]); ?>
