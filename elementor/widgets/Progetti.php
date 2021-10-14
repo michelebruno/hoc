@@ -52,6 +52,20 @@
                     'label_block' => true
                 ]
             );
+            $repeater->add_control(
+                'url',
+                [
+                    'type' => Controls_Manager::URL,
+                    'label' => 'URL',
+                    'placeholder' => __('https://your-link.com', 'plugin-domain'),
+                    'show_external' => false,
+                    'default' => [
+                        'url' => '',
+                        'is_external' => true,
+                        'nofollow' => true,
+                    ],
+                ]
+            );
 
             $repeater->add_control(
                 'descrizione',
@@ -81,28 +95,23 @@
                             'sottotitolo' => "Assaggio di università per le scuole superiori",
                             "descrizione" => "PoliCollege propone agli studenti del quarto e quinto anno delle scuole superiori brevi corsi online di livello universitario su materie STEM, tenuti da docenti del Politecnico di Milano.",
                         ],
-                        [
-                            'titolo' => "PoliCultura",
+                        ['titolo' => "PoliCultura",
                             "sottotitolo" => "storytelling digitale",
                             'descrizione' => "PoliCultura è un concorso di storytelling digitale per la scuola italiana, aperto a scuole di ogni ordine e grado. È attivo non-stop dal 2006.",
                         ],
-                        [
-                            'titolo' => "TalkyTutor",
+                        ['titolo' => "TalkyTutor",
                             "sottotitolo" => "un assistente virtuale per la didattica",
                             'descrizione' => "TalkyTutor è un assistente virtuale che supporta gli studenti di un corso basato su video a seguire il percorso ottimale per loro, guidandoli attraverso i contenuti, sostenendoli e incoraggiandoli.",
                         ],
-                        [
-                            'titolo' => "DOL (Diploma On Line)",
+                        ['titolo' => "DOL (Diploma On Line)",
                             "sottotitolo" => "Master per esperti nell’uso delle tecnologie per la didattica",
                             'descrizione' => "DOL è un master di primo e secondo livello del Politecnico di Milano, rivolto ai docenti della scuola italiana. Il focus è su come introdurre in maniera didatticamente significativa le tecnologie in classe.",
                         ],
-                        [
-                            'titolo' => "Base 5G",
+                        ['titolo' => "Base 5G",
                             "sottotitolo" => "Realtà Virtuale, Realtà Aumentata, educazione",
                             'descrizione' => "Base 5G è un progetto promosso da Regione Lombardia per portare la Realtà Virtuale e la Realtà Aumentata, potenziate dal 5G, nel mondo della scuola (dalla scuola dell’infanzia alle secondarie superiori).",
                         ],
-                        [
-                            'titolo' => "ELSE",
+                        ['titolo' => "ELSE",
                             "sottotitolo" => "didattica innovativa all’università",
                             'descrizione' => "ELSE (Eco/logical Learning and Simulation Environments in Higher Education), un progetto Erasmus+, porta metodi e strumenti di didattica innovativa nel mondo universitario.",
                         ],
@@ -145,16 +154,33 @@
                     flex flex-col
                     my-6 h-auto
                     bg-white">
-                            <div class="h-1/2 w-full">
+                            <div class="h-1/2 w-full  flex-shrink-0">
                                 <?php echo wp_get_attachment_image($progetto['immagine']['id'], 'large', false, [
                                     "class" => "!w-full !h-full block object-cover"
                                 ]) ?>
                             </div>
 
 
-                            <div class="p-4">
-                                <h3 class="my-4"><?php echo $progetto['titolo']; ?></h3>
-                                <p class="text-sm font-light"><?php echo $progetto['descrizione']; ?></p>
+                            <div class="flex flex-col flex-grow justify-between">
+
+                                <div class="p-4">
+                                    <h3 class="mb-4"><?php echo $progetto['titolo']; ?></h3>
+                                    <p class="text-sm font-light !mb-0"><?php echo $progetto['descrizione']; ?></p>
+                                </div>
+
+                                <div class="text-right m-4 !mt-0 ">
+                                    <?php
+
+                                        if ($progetto['url']['url']) {
+                                            ?><a class="text-primary text-sm font-light   leading-0 !no-underline hover:text-primary-dark
+transition duration-500    "
+                                                 href="<?php echo $progetto['url']['url']; ?>">
+                                            <?php pll_e("Vai al sito"); ?>
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                            </a>
+                                        <?php } ?>
+                                </div>
+
                             </div>
 
                             </div><?php

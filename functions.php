@@ -46,5 +46,6 @@
     pll_register_string("beni", "beni");
     pll_register_string("societa", "societa");
     pll_register_string("filtra", "Filtra per categoria:");
+    pll_register_string("visit", "Vai al sito");
 
 

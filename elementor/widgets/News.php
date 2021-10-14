@@ -67,9 +67,10 @@
                                 m-4
                                 rounded-lg overflow-hidden
                                 shadow-lg">
-                                    <div style="aspect-ratio: 16/9">
+                                    <div  >
                                         <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'large', false, [
-                                            "class" => "h-full w-full object-cover"
+                                            "class" => "h-full w-full object-cover",
+                                            "style" => "aspect-ratio: 16/9"
                                         ]); ?>
                                     </div>
                                     <div class="pb-4 lg:py-6 px-4 lg:pr-4 flex flex-col justify-between">
@@ -78,10 +79,10 @@
                                             <p class="text-light !my-0"><ion-icon name="calendar-outline"></ion-icon> <?php the_date() ?></p>
                                             <p class="text-sm text-light"><?php echo get_the_excerpt(); ?></p>
                                         </div>
-                                         <p class="!my-0">
+                                         <p class="!my-0 text-right">
                                             <a href="<?php the_permalink(); ?>" class="
-                                            rounded-xl inline-block text-sm  text-center !no-underline
-                                            py-2 px-4 border-primary border-2 text-primary leading-none
+                                            clip1 inline-block text-sm  text-center !no-underline
+                                            py-2 px-4 !border-primary border-2 text-primary leading-none
                                             !hover:text-primary-dark !hover:border-primary-dark
                                         ">Leggi</a>
                                         </p>
