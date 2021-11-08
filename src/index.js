@@ -12,7 +12,9 @@ function onDocReady() {
         slidesPerView: 1,
         // loop: true,
         // freeMode: true,
-        autoplay: true,
+        autoplay: {
+            pauseOnMouseEnter:true
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -38,7 +40,9 @@ function onDocReady() {
         slidesPerView: 1,
         // loop: true,
         // freeMode: true,
-        autoplay: true,
+        autoplay: {
+            pauseOnMouseEnter:true
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -53,7 +57,7 @@ function onDocReady() {
 
     const projects = document.querySelectorAll('[data-project]')
 
-    const activeClasses = ['!bg-primary', '!text-white']
+    const activeClasses = ['!bg-primary', '!text-white', '!hover:bg-primary-dark']
 
     filterButtons.forEach(i => {
         i.addEventListener('click', e => {
